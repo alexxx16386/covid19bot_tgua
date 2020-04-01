@@ -14,11 +14,10 @@ def start(message):
 	markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
 	btn1 = types.KeyboardButton('Во всём мире')
 	btn2 = types.KeyboardButton('Украина')
-	btn3 = types.KeyboardButton('Россия')
 	markup.add(btn1, btn2)
 
 	send_message = f"*Привет {message.from_user.first_name}!* Чтобы узнать данные про коронавируса напишите " \
-		f"название страны, например: Америка, Украина, Россия и так далее."
+		f"название страны, например: США, Украина, Россия и так далее."
 	bot.send_message(message.chat.id, send_message, parse_mode='markdown', reply_markup=markup)
 
 # Функция, что сработает при отправке какого-либо текста боту
