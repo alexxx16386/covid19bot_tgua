@@ -1,1 +1,1 @@
- python manage.py runserver 0.0.0.0:5000 --log-file -
+ worker: python main.py--log-file -
